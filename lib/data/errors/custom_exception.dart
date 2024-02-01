@@ -11,3 +11,7 @@ class JsonSerializationException extends CustomExceptions {
 class StatusCodeException extends CustomExceptions {
   StatusCodeException({super.errorMessage});
 }
+
+class OnDioException extends CustomExceptions {
+  OnDioException({super.errorMessage});
+}
