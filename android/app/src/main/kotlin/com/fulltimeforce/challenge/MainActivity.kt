@@ -1,0 +1,6 @@
+package com.fulltimeforce.challenge.fulltimeforce_challenge
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
