@@ -25,7 +25,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       final commits = await _githubRepository.getCommits();
       emit(HomeSuccess(commits: commits));
     } catch (error) {
-      emit(HomeError(errorMessage: error.toString())); // TODO: text the error
+      emit(HomeError(errorMessage: error.toString()));
     }
   }
 }

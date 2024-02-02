@@ -1,4 +1,4 @@
-// ignore_for_file: inference_failure_on_function_invocation, avoid_dynamic_calls, lines_longer_than_80_chars
+// ignore_for_file: inference_failure_on_function_invocation, avoid_dynamic_calls, lines_longer_than_80_chars, no_default_cases
 
 import 'package:data/data.dart';
 
@@ -40,7 +40,27 @@ class GithubApi implements Api {
       }
     } on DioException catch (error) {
       final message = error.response?.data?['message'] as String?;
-      throw OnDioException(errorMessage: message ?? '');
+      switch (error.type) {
+        case DioExceptionType.connectionTimeout:
+          throw TimeOutDioException(
+            errorMessage: 'Revisa tu conexión a internet',
+          );
+        case DioExceptionType.sendTimeout:
+          throw TimeOutDioException(
+            errorMessage: 'Revisa tu conexión a internet',
+          );
+        case DioExceptionType.receiveTimeout:
+          throw TimeOutDioException(
+            errorMessage: 'Revisa tu conexión a internet',
+          );
+        case DioExceptionType.badResponse:
+          throw BadResponseDioException(
+            errorMessage: 'Mala respuesta del servidor',
+          );
+
+        default:
+          throw OnDioException(errorMessage: message ?? '');
+      }
     } catch (error) {
       rethrow;
     }
