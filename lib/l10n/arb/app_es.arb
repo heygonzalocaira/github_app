@@ -1,7 +1,40 @@
 {
     "@@locale": "es",
-    "counterAppBarTitle": "Contador",
-    "@counterAppBarTitle": {
-        "description": "Texto mostrado en la AppBar de la página del contador"
+    "commitAppBarTitle": "Mis commits",
+    "@commitsAppBarTitle": {
+        "description": "Texto para el titulo del appbar en Commits"
+    },
+    "profileAppBarTitle": "Perfil",
+    "@profileAppBarTitle": {
+        "description": "Texto para el titulo del appbar en Profile"
+    },
+    "settingsAppBarTitle": "Configuración",
+    "@settingsAppBarTitle": {
+        "description": "Texto para el titulo del appbar en Settings"
+    },
+    "authorText": "Autor",
+    "@authorText": {
+        "description": "Texto dentro de profile"
+    },
+    "gmailText": "Correo electrónico",
+    "@gmailText": {
+        "description": "Texto dentro de profile"
+    },
+    "githubUserText": "Usuario de Github",
+    "@githubUserText": {
+        "description": "Texto dentro de profile"
+    },
+    "themeText": "Tema Oscuro",
+    "@themeText": {
+        "description": "Texto dentro de settings"
+    },
+    "languageText": "Idioma",
+    "@languageText": {
+        "description": "Texto dentro de settings"
+    },
+    "splashText": "Reto FulltimeForce",
+    "@splashText": {
+        "description": "Text inside splash"
     }
 }
+

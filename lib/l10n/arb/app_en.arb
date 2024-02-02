@@ -1,7 +1,39 @@
 {
     "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
+    "commitAppBarTitle": "My commits",
+    "@commitsAppBarTitle": {
+        "description": "Text for the appbar title in Commits"
+    },
+    "profileAppBarTitle": "Profile",
+    "@profileAppBarTitle": {
+        "description": "Text for the title of the appbar in Profile"
+    },
+    "settingsAppBarTitle": "Settings",
+    "@settingsAppBarTitle": {
+        "description": "Text for the title of the appbar in Settings"
+    },
+    "authorText": "Author",
+    "@authorText": {
+        "description": "Text inside profile"
+    },
+    "gmailText": "Email address",
+    "@gmailText": {
+        "description": "Text inside profile"
+    },
+    "githubUserText": "Github user",
+    "@githubUserText": {
+        "description": "Text inside profile"
+    },
+    "themeText": "Dark Theme",
+    "@themeText": {
+        "description": "Text inside settings"
+    },
+    "languageText": "Language",
+    "@languageText": {
+        "description": "Text inside settings"
+    },
+    "splashText": "FulltimeForce Challenge",
+    "@splashText": {
+        "description": "Text inside splash"
     }
 }
