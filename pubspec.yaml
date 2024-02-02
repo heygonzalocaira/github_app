@@ -8,7 +8,8 @@ environment:
 
 dependencies:
   bloc: ^8.1.2
-  dio: ^5.4.0
+  domain:
+    path: packages/domain
   equatable: ^2.0.5
   flutter:
     sdk: flutter
@@ -16,7 +17,10 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   go_router: ^13.1.0
+  google_fonts: ^6.1.0
   intl: ^0.18.0
+  shimmer: ^3.0.0
+  stacked_card_carousel: ^0.0.4
 
 dev_dependencies:
   bloc_test: ^9.1.4
@@ -25,6 +29,7 @@ dev_dependencies:
   mocktail: ^1.0.0
   very_good_analysis: ^5.1.0
 
+
 flutter:
   uses-material-design: true
   generate: true
@@ -32,3 +37,13 @@ flutter:
   assets:
     - assets/
     - assets/img/
+    - assets/fonts/
+
+
+  fonts:
+    - family: poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins-Italic.ttf
+        - asset: assets/fonts/Poppins-Light.ttf
+        - asset: assets/fonts/Poppins-Regular.ttf

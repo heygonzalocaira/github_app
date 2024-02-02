@@ -1,4 +1,4 @@
-package com.fulltimeforce.challenge.fulltimeforce_challenge
+package com.fulltimeforcechallenge.app.id
 
 import io.flutter.embedding.android.FlutterActivity
 
