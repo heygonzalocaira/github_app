@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:fulltimeforce_challenge/l10n/l10n.dart';
 import 'package:fulltimeforce_challenge/router/app_routes.dart';
@@ -14,13 +16,20 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
+  late Timer timer;
   @override
   void initState() {
     super.initState();
 
-    Future.delayed(const Duration(milliseconds: 1500), () {
+    timer = Timer(const Duration(milliseconds: 1500), () {
       GoRouter.of(context).go(AppRoutes.commits);
     });
+  }
+
+  @override
+  void dispose() {
+    timer.cancel();
+    super.dispose();
   }
 
   @override

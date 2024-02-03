@@ -11,6 +11,7 @@ class LoadingView extends StatelessWidget {
         padding: EdgeInsets.all(16),
         child: Column(
           children: [
+            /// Six of both widgets
             SizedBox(height: 16),
             ShimmerBox(height: 100),
             SizedBox(height: 16),

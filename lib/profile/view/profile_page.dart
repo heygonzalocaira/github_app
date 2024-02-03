@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fulltimeforce_challenge/home/bloc/home_bloc.dart';
 import 'package:fulltimeforce_challenge/l10n/l10n.dart';
 import 'package:fulltimeforce_challenge/profile/profile.dart';
+import 'package:fulltimeforce_challenge/utils/widgets/widgets.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -27,10 +28,38 @@ class ProfilePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const SizedBox(height: 64),
-                    CircleAvatar(
-                      radius: 80,
-                      backgroundImage: NetworkImage(
-                        state.commits.first.avatarUrl,
+                    SizedBox(
+                      width: 160,
+                      height: 160,
+                      child: ClipOval(
+                        key: const Key('Circle Profile'),
+                        child: Image.network(
+                          state.commits.first.avatarUrl,
+                          loadingBuilder: (
+                            BuildContext context,
+                            Widget child,
+                            ImageChunkEvent? loadingProgress,
+                          ) {
+                            if (loadingProgress == null) {
+                              return child;
+                            } else {
+                              return const ShimmerCircle(radius: 80);
+                            }
+                          },
+                          errorBuilder: (
+                            BuildContext context,
+                            Object error,
+                            StackTrace? stackTrace,
+                          ) {
+                            return const Center(
+                              child: Icon(
+                                Icons.error,
+                                color: Colors.red,
+                                size: 40,
+                              ),
+                            );
+                          },
+                        ),
                       ),
                     ),
                     const SizedBox(height: 16),

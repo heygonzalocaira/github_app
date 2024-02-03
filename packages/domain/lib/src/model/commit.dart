@@ -1,7 +1,9 @@
+import 'package:equatable/equatable.dart';
+
 /// Commit object for repository
-class Commit {
+class Commit extends Equatable {
   /// Constructor
-  Commit({
+  const Commit({
     required this.authorName,
     required this.email,
     required this.date,
@@ -31,4 +33,14 @@ class Commit {
 
   /// url of user image in github
   final String avatarUrl;
+
+  @override
+  List<Object?> get props => [
+        authorName,
+        authorLogin,
+        email,
+        date,
+        url,
+        avatarUrl,
+      ];
 }

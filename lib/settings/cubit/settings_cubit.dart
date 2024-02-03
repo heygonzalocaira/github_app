@@ -28,16 +28,16 @@ class SettingsCubit extends Cubit<SettingsState> {
     }
   }
 
-  Future<void> changeLanguage(String data) async {
+  Future<void> changeLanguage({required String data}) async {
     try {
-      emit(state.copyWith(locale: Locale(data, '')));
+      emit(state.copyWith(locale: Locale(data)));
       await _sharedPreferencesRepository.setLocale(data);
     } catch (error) {
       throw Exception('changeLanguage: $error');
     }
   }
 
-  Future<void> changeTheme(bool isDark) async {
+  Future<void> changeTheme({required bool isDark}) async {
     try {
       emit(state.copyWith(isDark: isDark));
       await _sharedPreferencesRepository.setIsDark(isDark);

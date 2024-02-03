@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fulltimeforce_challenge/l10n/l10n.dart';
 import 'package:fulltimeforce_challenge/settings/cubit/settings_cubit.dart';
+import 'package:fulltimeforce_challenge/settings/setttings.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({super.key});
@@ -32,14 +33,24 @@ class SettingsPage extends StatelessWidget {
                     Switch(
                       value: state.isDark,
                       onChanged: (bool value) {
-                        context.read<SettingsCubit>().changeTheme(value);
+                        context
+                            .read<SettingsCubit>()
+                            .changeTheme(isDark: value);
                       },
                     ),
                   ],
                 ),
-                const SizedBox(height: 20),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 5),
+                  child: Divider(
+                    color: Theme.of(context)
+                        .colorScheme
+                        .onSurface
+                        .withOpacity(0.3),
+                  ),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       l10n.languageText,
@@ -47,19 +58,34 @@ class SettingsPage extends StatelessWidget {
                         fontSize: 18,
                       ),
                     ),
-                    Switch(
-                      value: state.locale.languageCode ==
-                          context.read<SettingsCubit>().english,
-                      onChanged: (bool value) {
-                        if (value) {
-                          context.read<SettingsCubit>().changeLanguage(
-                                context.read<SettingsCubit>().english,
-                              );
-                        } else {
-                          context.read<SettingsCubit>().changeLanguage(
-                                context.read<SettingsCubit>().spanish,
-                              );
-                        }
+                    const SizedBox(height: 16),
+                    LanguageStatusWidget(
+                      language: context.read<SettingsCubit>().spanish,
+                      currentLanguage: context
+                          .read<SettingsCubit>()
+                          .state
+                          .locale
+                          .languageCode,
+                      label: l10n.spanishText,
+                      onPressed: () {
+                        context.read<SettingsCubit>().changeLanguage(
+                              data: context.read<SettingsCubit>().spanish,
+                            );
+                      },
+                    ),
+                    const SizedBox(height: 16),
+                    LanguageStatusWidget(
+                      language: context.read<SettingsCubit>().english,
+                      currentLanguage: context
+                          .read<SettingsCubit>()
+                          .state
+                          .locale
+                          .languageCode,
+                      label: l10n.englishText,
+                      onPressed: () {
+                        context.read<SettingsCubit>().changeLanguage(
+                              data: context.read<SettingsCubit>().english,
+                            );
                       },
                     ),
                   ],

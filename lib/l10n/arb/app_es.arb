@@ -35,6 +35,14 @@
     "splashText": "Reto FulltimeForce",
     "@splashText": {
         "description": "Text inside splash"
+    },
+    "spanishText": "Español",
+    "@spanishText": {
+        "description": "Text inside settings"
+    },
+    "englishText": "Inglés",
+    "@englishText": {
+        "description": "Text inside settings"
     }
 }
 
