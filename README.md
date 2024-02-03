@@ -93,6 +93,15 @@ All tests are inside the test folder
 │   ├── feature_test
 ```
 ---
+## Screenshots
+
+|     |     |    |
+| :-: | :-: |:-: |
+|  Splash Screen | Commits Screen | Profile |
+| <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/splash.png?raw=true" height="300" /> | <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/commits.png?raw=true" height="300" /> | <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/profile.png?raw=true" height="300" /> |
+|  Settings | Commits in Dark theme |  |
+| <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/settings.png?raw=true" height="300" /> | <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/dark_commits.png?raw=true" height="300" /> | |
+
 
 
 
