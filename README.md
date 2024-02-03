@@ -75,8 +75,17 @@ Within the packages folder, two distinct packages have been created: one called 
 └── packages
     ├── data
     │   └── lib
-    └── domain
-        └── lib
+    │   │   └── src
+    │   │      └── entities
+    │   │      └── errors
+    │   │      └── services    
+    │   └── test    
+    └── data
+        │   └── lib
+        │   └── src
+        │       └── model
+        │       └── repository
+        └── test
 ```
 
 ## Running Tests 🧪
@@ -95,13 +104,30 @@ All tests are inside the test folder
 ---
 ## Screenshots
 
-|     |     |    |
-| :-: | :-: |:-: |
-|  Splash Screen | Commits Screen | Profile |
-| <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/splash.png?raw=true" height="300" /> | <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/commits.png?raw=true" height="300" /> | <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/profile.png?raw=true" height="300" /> |
-|  Settings | Commits in Dark theme |  |
-| <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/settings.png?raw=true" height="300" /> | <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/dark_commits.png?raw=true" height="300" /> | |
+|     |     |    |    |
+| :-: | :-: |:-: |:-: |
+|  Splash Screen | Commits Screen | Profile es | Profile en |
+| <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/splash.png?raw=true" height="300" /> | <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/commits.png?raw=true" height="300" /> | <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/profile.png?raw=true" height="300" /> | <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/profile_en.png?raw=true" height="300" /> |
+|  Settings | Commits in Dark theme | Loading view |   |
+| <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/settings.png?raw=true" height="300" /> | <img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/dark_commits.png?raw=true" height="300" /> |<img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/loading_view.png?raw=true" height="300" />  |  |  
 
 
+# List of Packages
+
+Here is a list of some packages used in the project:
+
+- [very_good_cli](https://pub.dev/packages/very_good_cli): to generate the project and packages
+- [bloc](https://pub.dev/packages/bloc)
+- [bloc_test](https://pub.dev/packages/bloc_test)
+- [equatable](https://pub.dev/packages/equatable)
+- [flutter_bloc](https://pub.dev/packages/flutter_bloc)
+- [go_router](https://pub.dev/packages/go_router)
+- [intl](https://pub.dev/packages/intl)
+- [shimmer](https://pub.dev/packages/shimmer)
+- [stacked_card_carousel](https://pub.dev/packages/stacked_card_carousel)
+- [mocktail](https://pub.dev/packages/mocktail)
+- [very_good_analysis](https://pub.dev/packages/very_good_analysis)
+- [shared_preferences](https://pub.dev/packages/shared_preferences)
+- [dio](https://pub.dev/packages/dio)
 
 
