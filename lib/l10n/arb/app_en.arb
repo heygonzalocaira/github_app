@@ -32,7 +32,7 @@
     "@languageText": {
         "description": "Text inside settings"
     },
-    "splashText": "FulltimeForce Challenge",
+    "splashText": "Github commits",
     "@splashText": {
         "description": "Text inside splash"
     },

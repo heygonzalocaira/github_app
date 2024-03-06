@@ -1,6 +1,8 @@
-# Fulltimeforce Challenge
+# Github commit app
 
-FulltimeForce Challenge is an application that provides an engaging visual experience for exploring GitHub commits. The app features multiple views, including a Splash screen, a Home view for seamless navigation through Commits, and convenient access to the user's profile. Additionally, the app includes Configuration options to customize the theme and language, ensuring a satisfactory and efficient user experience.
+Github commit app is an application that provides an engaging visual experience for exploring GitHub commits. The app features multiple views, including a Splash screen, a Home view for seamless navigation through Commits, and convenient access to the user's profile. Additionally, the app includes Configuration options to customize the theme and language, ensuring a satisfactory and efficient user experience.
+
+<img src="https://github.com/heygonzalocaira/fulltimeforce_challenge/blob/main/assets/screenshots/cover_page.png?raw=true" height="300" /> 
 
 ---
 ## Let's start 🚀
